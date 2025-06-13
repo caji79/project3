@@ -1,0 +1,81 @@
+-- constants.lua
+
+-- screen
+SCREEN_WIDTH = 1020
+SCREEN_HEIGHT = 960
+
+-- card
+CARD_WIDTH = 100
+CARD_HEIGHT = 150
+MAX_HAND_SIZE = 7
+
+-- game button
+CONFIRM_BUTTON = {
+    x = 7.5,
+    y = SCREEN_HEIGHT - 200,
+    w = 120,
+    h =  40
+}
+
+PASS_BUTTON = {
+  x = 7.5,
+  y = SCREEN_HEIGHT - 150,
+  w = 120,
+  h = 40
+}
+
+PLAY_AGAIN_BUTTON = {
+  x = SCREEN_WIDTH/2 - 60,
+  y = SCREEN_HEIGHT/2 + 20,
+  w = 120,
+  h = 40
+}
+
+-- UI
+POWER_CIRCLE = {
+  radius = 16,
+  color  = {1, 0.5, 0, 1}  -- orange
+}
+
+MANA_CIRCLE_P = {
+  x = 60,
+  y = SCREEN_HEIGHT - 40,
+  r = 30
+}
+
+MANA_CIRCLE_E = {
+  x = SCREEN_WIDTH - 60,
+  y = 40,
+  r = 30
+}
+
+-- card location line
+VERTICAL1_X = CARD_WIDTH + 20
+VERTICAL2_X = VERTICAL1_X + 260
+VERTICAL3_X = VERTICAL2_X + 260
+VERTICAL4_X = VERTICAL3_X + 260
+VERTICAL_Y = CARD_HEIGHT / 2 + 40
+
+-- card slot placeholders
+SLOT_VERT1_X = VERTICAL1_X + 20
+SLOT_VERT2_X = SLOT_VERT1_X + CARD_WIDTH + 20
+SLOT_VERT3_X = SLOT_VERT2_X + CARD_WIDTH + 40
+SLOT_VERT4_X = SLOT_VERT3_X + CARD_WIDTH + 20
+SLOT_VERT5_X = SLOT_VERT4_X + CARD_WIDTH + 40
+SLOT_VERT6_X = SLOT_VERT5_X + CARD_WIDTH + 20
+
+SLOT2_Y = SCREEN_HEIGHT / 2 - CARD_HEIGHT - 45
+SLOT1_Y = SLOT2_Y - CARD_HEIGHT - 20
+SLOT3_Y = SCREEN_HEIGHT / 2 + 45
+SLOT4_Y = SLOT3_Y + CARD_HEIGHT + 20
+
+-- hover text setting
+CARD_TEXT_SIZE = 15
+-- hover text offset
+TEXT_OFFSET_X = 110
+TEXT_OFFSET_Y = -110
+
+-- UI font
+UI_TEXT_SIZE = 15
+SCORE_TEXT_SIZE = 20
+TURN_TEXT_SIZE = 72
